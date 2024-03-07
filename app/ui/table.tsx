@@ -34,7 +34,7 @@ const JobsTable = ({query, currentPage}:{
                 </div>
                 <div className="flex w-full items-center justify-between pt-4">
                   <div>
-                    <p className="text-xl font-medium">
+                    <p>
                       {job.role}
                     </p>
                     <p>{formatDateToLocal(job.date)}</p>

@@ -15,11 +15,15 @@ export default function InterviewStatus({ status }: { status: boolean }) {
     >
       {status ? (
         <>
-          Done
-          <CheckIcon className="ml-1 w-4 text-white" />
+        <div className="md:hidden">Interviewed</div>
+        <div className="hidden md:block">Yes</div>
+        
+        <CheckIcon className="ml-1 w-4 text-white" />
         </>
-      ) :  <>
-          None
+      ) :  
+        <>
+        <div className="md:hidden">No Interview</div>
+        <div className="hidden md:block ">No</div>
           <XMarkIcon className="ml-1 w-4 text-gray" />
       </>}
     

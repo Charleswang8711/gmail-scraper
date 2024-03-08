@@ -1091,8 +1091,16 @@ import { ITEM_PER_PAGE } from "./constants";
 ]
 
 
-export const validatedJobs = jobs.map
-((job,index) => ({...job, id: (index+1).toString()}));
+export const validatedJobs = jobs.map(
+  (job,index) => ({...job, id: (index+1).toString()})
+).reduce((acc, job) => {
+
+  if (acc.some((j) => j.companyName === job.companyName)){
+    return acc;
+  }
+  return [...acc, job];
+}, []as Array<Job>) ;
+
 
 export const getFilteredJobs = (query?: string, page?: number): Array<Job> => {
 

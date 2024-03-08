@@ -3,7 +3,7 @@ import { inter } from '@/app/ui/fonts';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Job Interview",
+  title: "Job Seek",
   description: "A tracker of job interview",
 };
 

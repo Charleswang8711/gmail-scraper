@@ -833,14 +833,6 @@ import { ITEM_PER_PAGE } from "./constants";
     date: '1/11/2024',
   },
   {
-    id: '102',
-    companyName: 'FWD Search',
-    location: 'Sydney ',
-    role: ' Embedded Software Engineer',
-    interviewed: false,
-    date: '1/11/2024',
-  },
-  {
     id: '103',
     companyName: 'Recruitment Hive',
     location: 'Canberra ',
@@ -953,14 +945,6 @@ import { ITEM_PER_PAGE } from "./constants";
     date: '12/29/2023',
   },
   {
-    id: '118',
-    companyName: 'Novus',
-    location: 'Sydney  ',
-    role: 'Front-end Developer',
-    interviewed: false,
-    date: '12/25/2023',
-  },
-  {
     id: '119',
     companyName: 'Skin Rejuvenate',
     location: 'Perth  ',
@@ -983,22 +967,6 @@ import { ITEM_PER_PAGE } from "./constants";
     role: 'Senior Front-End Developer',
     interviewed: false,
     date: '12/15/2023',
-  },
-  {
-    id: '122',
-    companyName: 'CSG Talent',
-    location: 'Perth  ',
-    role: 'Senior Front-End Developer',
-    interviewed: false,
-    date: '12/15/2023',
-  },
-  {
-    id: '123',
-    companyName: 'Montagu Group Pty LTD',
-    location: 'Perth  ',
-    role: 'Mid Level Front End Developer',
-    interviewed: false,
-    date: '12/14/2023',
   },
   {
     id: '125',
@@ -1097,22 +1065,6 @@ import { ITEM_PER_PAGE } from "./constants";
     date: '12/2/2023',
   },
   {
-    id: '137',
-    companyName: 'connectingus',
-    location: ' Melbourne ',
-    role: 'Full Stack Developer',
-    interviewed: false,
-    date: '11/30/2023',
-  },
-  {
-    id: '138',
-    companyName: 'Airteam',
-    location: ' Sydney ',
-    role: 'Full Stack Developer',
-    interviewed: false,
-    date: '11/30/2023',
-  },
-  {
     id: '139',
     companyName: 'Montagu Group Pty Ltd',
     location: ' Sydney ',
@@ -1121,24 +1073,8 @@ import { ITEM_PER_PAGE } from "./constants";
     date: '11/30/2023',
   },
   {
-    id: '140',
-    companyName: 'ezilinx',
-    location: ' Perth ',
-    role: 'Full-stack Web Developer',
-    interviewed: false,
-    date: '11/30/2023',
-  },
-  {
     id: '141',
     companyName: 'Novus',
-    location: ' Perth ',
-    role: 'Senior Front End Engineer',
-    interviewed: false,
-    date: '11/30/2023',
-  },
-  {
-    id: '142',
-    companyName: 'PRA',
     location: ' Perth ',
     role: 'Senior Front End Engineer',
     interviewed: false,
@@ -1155,7 +1091,8 @@ import { ITEM_PER_PAGE } from "./constants";
 ]
 
 
-export const validatedJobs = jobs.map((job,index) => ({...job, id: (index+1).toString()}));
+export const validatedJobs = jobs.map
+((job,index) => ({...job, id: (index+1).toString()}));
 
 export const getFilteredJobs = (query?: string, page?: number): Array<Job> => {
 

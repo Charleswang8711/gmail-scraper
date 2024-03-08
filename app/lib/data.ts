@@ -430,14 +430,6 @@ import { ITEM_PER_PAGE } from "./constants";
     date: '2/14/2024',
   },
   {
-    id: '52',
-    companyName: 'Java Analyst/Developer',
-    location: 'Perth ',
-    role: 'Software Developer',
-    interviewed: false,
-    date: '2/14/2024',
-  },
-  {
     id: '53',
     companyName: 'Digital Resources Australia Pty Ltd',
     location: 'Perth ',

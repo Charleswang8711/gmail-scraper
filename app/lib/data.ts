@@ -28,7 +28,7 @@ import { ITEM_PER_PAGE } from "./constants";
   },
   {
     id: '3',
-    companyName: 'Prote/Landnow',
+    companyName: 'Propte/Landnow',
     location: 'Perth',
     role: 'Senior Frontend Developer',
     interviewed: true,

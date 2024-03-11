@@ -39,7 +39,7 @@ import { ITEM_PER_PAGE } from "./constants";
     companyName: 'Genvis',
     location: 'Perth',
     role: 'Senior Frontend Engineer',
-    interviewed: false,
+    interviewed: true,
     date: '3/7/2024',
   },
   {
@@ -1092,6 +1092,17 @@ export const validatedJobs = jobs.map(
   }
   return [...acc, job];
 }, []as Array<Job>) ;
+
+
+export const getDataFromGmail = async () => {
+
+  const response = await fetch('/api/gmail');
+  const data = await response.json();
+  return data;
+
+}
+
+
 
 
 export const getFilteredJobs = (query?: string, page?: number): Array<Job> => {
